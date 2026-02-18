@@ -31,7 +31,7 @@ go.work.sum
 .env.local
 .env.*.local
 
-# Build output (ปรับตามโครงสร้างโปรเจค)
+# Build output 
 backend/bin/
 backend/tmp/
 
@@ -66,7 +66,7 @@ frontend/.env.local
 frontend/.env.*.local
 *.local
 
-# Package locks (เลือกอันที่ใช้)
+# Package locks 
 # package-lock.json
 # yarn.lock
 # pnpm-lock.yaml
