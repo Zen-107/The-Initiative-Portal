@@ -1,3 +1,3 @@
-module github.com/YOUR_USERNAME/The-Initiative-Portal
+module github.com/Zen-107/The-Initiative-Portal
 
-go 1.25.7
+go 1.21

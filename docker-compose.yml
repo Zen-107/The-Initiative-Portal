@@ -1,12 +1,22 @@
 version: '3.8'
 
 services:
-  web:
-    build: .
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    restart: always
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
     ports:
       - "8080:8080"
-    volumes:
-      - ./web:/app/web
     environment:
       - PORT=8080
     restart: always
